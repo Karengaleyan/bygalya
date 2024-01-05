@@ -1,0 +1,116 @@
+{% extends 'templates/base.twig' %}
+
+{% block content %}
+
+<section class="welcome" data-aos="fade-up">
+   <div class="welcome__arrow">
+      <a href="#start" class="service__arrow">
+         <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5V19M12 5L6 11M12 5L18 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+         </svg>
+      </a>
+   </div>
+</section>
+
+<section class="slider section" id="start">
+   <div class="section__head" data-aos="fade-up">
+      <h2 class="section__title">Мои работы</h2>
+   </div>
+
+   <div class="slider-photo">
+      <a class="slider__item" data-gallery="gallery" data-fancybox="gallery" href="images/slider/1.jpg">
+         <img src="images/slider/1.jpg" alt="">
+      </a>
+      <a class="slider__item" data-gallery="gallery" data-fancybox="gallery" href="images/slider/2.jpg">
+         <img src="images/slider/2.jpg" alt="">
+      </a>
+      <a class="slider__item" data-gallery="gallery" data-fancybox="gallery" href="images/slider/3.png">
+         <img src="images/slider/3.png" alt="">
+      </a>
+      <a class="slider__item" data-gallery="gallery" data-fancybox="gallery" href="images/slider/4.jpg">
+         <img src="images/slider/4.jpg" alt="">
+      </a>
+      <a class="slider__item" data-gallery="gallery" data-fancybox="gallery" href="images/slider/5.jpg">
+         <img src="images/slider/5.jpg" alt="">
+      </a>
+      <a class="slider__item" data-gallery="gallery" data-fancybox="gallery" href="images/slider/6.jpg">
+         <img src="images/slider/6.jpg" alt="">
+      </a>
+      <a class="slider__item" data-gallery="gallery" data-fancybox="gallery" href="images/slider/7.jpg">
+         <img src="images/slider/7.jpg" alt="">
+      </a>
+      <a class="slider__item" data-gallery="gallery" data-fancybox="gallery" href="images/slider/8.jpg">
+         <img src="images/slider/8.jpg" alt="">
+      </a>
+      <a class="slider__item" data-gallery="gallery" data-fancybox="gallery" href="images/slider/9.jpg">
+         <img src="images/slider/9.jpg" alt="">
+      </a>
+      <a class="slider__item" data-gallery="gallery" data-fancybox="gallery" href="images/slider/10.png">
+         <img src="images/slider/10.png" alt="">
+      </a>
+      <a class="slider__item" data-gallery="gallery" data-fancybox="gallery" href="images/slider/11.jpg">
+         <img src="images/slider/11.jpg" alt="">
+      </a>
+   </div>
+</section>
+
+<section class="background"></section>
+
+<section class="section work">
+   <div class="container">
+      <div class="section__head">
+         <div class="section__title" data-aos="fade-up">
+            Приходи на съемку — будем делать стиль
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-lg-5 col-md-6" data-aos="fade-up">
+            <div class="work__block">
+               <div class="work__img">
+                  <img src="images/work/work-photo.JPG" alt="">
+               </div>
+               <div>
+                  <a href="portfolio.html" class="button button--black">
+                     Фотосъемка
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-5 col-md-6" data-aos="fade-up">
+            <div class="work__block">
+               <div class="work__img">
+                  <img src="images/work/videosyomka.PNG" alt="">
+               </div>
+               <div>
+                  <a href="portfolio-video.html" class="button button--black">
+                     Видеосъемка
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="section section--dark request" data-aos="fade-up">
+   <div class="container">
+      <div class="section__head">
+         <h2 class="section__title" data-aos="fade-up">
+            Свяжитесь со мной
+         </h2>
+      </div>
+
+      <form action="/submit_form" method="post">
+         <input class="name" type="text" id="name" name="name" placeholder="Ваше имя" autocomplete="off">
+         <input type="text" id="contact" name="contact" placeholder="Контактный телефон или email" autocomplete="off">
+         <textarea id="message" name="message" rows="4" cols="50" placeholder="Ваше сообщение"></textarea>
+
+         <div>
+            <button type="submit" class="button button--white">
+               <span>Отправить</span>
+            </button>
+         </div>
+      </form>
+   </div>
+</section>
+{% endblock %}

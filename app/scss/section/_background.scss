@@ -1,0 +1,14 @@
+.background {
+   background-image: url(../../images/background.jpg);
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   height: 40vh;
+   width: 100%;
+   margin: 0 auto;
+
+   @include media-breakpoint-down(md) {
+      background-attachment: local;
+      height: 100px;
+   }
+}

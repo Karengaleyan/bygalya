@@ -1,0 +1,46 @@
+{% extends 'templates/base.twig' %}
+
+{% block content %}
+
+<section class="contact section">
+   <div class="section__head">
+      <div class="section__title">Я в соц сетях</div>
+   </div>
+
+   <div class="container">
+      <div class="contact__socials" data-aos="fade-up">
+         <a href="https://www.instagram.com/by.galyaa?igsh=amtoamhnZzB2dzBt" target="_blank">
+            instagram
+         </a>
+         <a href="https://t.me/galyaa1" target="_blank">
+            telegram
+         </a>
+         <a href="https://wa.me/+79775958043" target="_blank">
+            whatsapp
+         </a>
+      </div>
+   </div>
+</section>
+
+<section class="section section--dark request" data-aos="fade-up">
+   <div class="container">
+      <div class="section__head">
+         <h2 class="section__title" data-aos="fade-up">
+            Свяжитесь со мной
+         </h2>
+      </div>
+
+      <form action="/submit_form" method="post">
+         <input class="name" type="text" id="name" name="name" placeholder="Ваше имя" autocomplete="off">
+         <input type="text" id="contact" name="contact" placeholder="Контактный телефон или email" autocomplete="off">
+         <textarea id="message" name="message" rows="4" cols="50" placeholder="Ваше сообщение"></textarea>
+
+         <div>
+            <button type="submit" class="button button--white">
+               <span>Отправить</span>
+            </button>
+         </div>
+      </form>
+   </div>
+</section>
+{% endblock %}

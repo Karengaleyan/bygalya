@@ -1,0 +1,64 @@
+.request {
+   text-align: center;
+
+   form {
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+
+      input {
+         border: none;
+         height: 50px;
+         margin-bottom: 15px;
+      }
+
+      textarea {
+         resize: none;
+         border: none;
+         padding-top: 15px;
+         margin-bottom: 35px;
+      }
+
+      input,
+      textarea {
+         border-bottom: 1px solid white;
+         background-color: transparent;
+         color: white;
+
+         &::placeholder {
+            color: rgba(white, .5);
+         }
+      }
+
+      input:focus,
+      textarea:focus {
+         outline: none;
+      }
+
+   }
+}
+
+// button {
+//    margin-top: 30px;
+//    height: 50px;
+//    max-width: 160px;
+//    width: 100%;
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+//    border: none;
+//    background: black;
+//    color: white;
+//    border-radius: 50px;
+//    text-transform: uppercase;
+//    letter-spacing: 2px;
+//    font-weight: 600;
+//    font-size: 14px;
+//    transition: background-color .2s ease-in;
+
+//    &:hover {
+//       background-color: rgba(0, 0, 0, 0.7);
+//    }
+// }

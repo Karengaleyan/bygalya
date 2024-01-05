@@ -1,0 +1,120 @@
+{% extends 'templates/base.twig' %}
+
+{% block content %}
+
+<section class="service">
+   <div class="container" data-aos="fade-up">
+      <div class="service__row">
+         <h1 class="service__title">
+            Стоимость фотосъемки
+         </h1>
+         <div class="service__subtitle">
+            Ознакомьтесь с информацией и свяжитесь со мной, если у вас остались вопросы
+         </div>
+         <a href="#service__info" class="service__arrow">
+            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M12 5V19M12 5L6 11M12 5L18 11" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+            </svg>
+         </a>
+      </div>
+      <div class="position__button">
+         <a href="https://t.me/galyaa1" id="telegram" target="_blank">
+         </a>
+         <a href="#" id="scrollToTopButton" onclick="scrollToTop()">
+         </a>
+      </div>
+   </div>
+</section>
+
+<section id="service__info" class="service__info section">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-5 col-sm-8" data-aos="fade-up">
+            <img src="images/work/work-photo.JPG" alt="">
+            <div class="service__info--row">
+               <div class="service-item__top">
+                  <div>
+                     <div class="service-item__title">
+                        Индивидуальная фотосъемка
+                     </div>
+
+                     <div class="service-item__price">19000 ₽</div>
+                  </div>
+                  <div>
+                     <div class="service-item__title">
+                        Парная фотосъемка
+                     </div>
+
+                     <div class="service-item__price">19000 ₽</div>
+                  </div>
+               </div>
+
+               <div>
+                  <p>
+                     -1 час съемки
+                  </p>
+                  <p>
+                     -все исходники для отбора кадров
+                  </p>
+                  <p>
+                     -15 кадров в авторской обработке 
+                  </p>
+                  <p>
+                     -помощь в формировании идеи
+                  </p>
+                  <p>
+                     -помощь в выборе локации
+                  </p>
+                  <p>
+                     -помощь при подборе образа
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-5 col-sm-8" data-aos="fade-up">
+            <img src="images/work/videosyomka.PNG" alt="">
+            <div class="service__info--row">
+               <div class="service-item__top">
+                  <div>
+                     <div class="service-item__title">
+                        Видеосъемка
+                     </div>
+
+                     <div class="service-item__price">19000 ₽</div>
+                  </div>
+               </div>
+
+               <p>
+                  -2 часа съемки
+               </p>
+               <p>
+                  -все исходники
+               </p>
+               <p>
+                  -минутное видео
+               </p>
+               <p>
+                  -помощь в формировании идеи, подбор музыки
+               </p>
+               <p>
+                  -помощь в выборе локации
+               </p>
+               <p>
+                  -аксессуары при необходимости
+               </p>
+               <p>
+                  -готовность фото 7-10 дней после отбора кадров
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+{# <section class="section section--dark">
+   <div class="container">
+      asdad
+   </div>
+</section> #}
+{% endblock %}

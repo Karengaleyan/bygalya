@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>By.galya</title>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,400;0,700;1,700&family=Dancing+Script:wght@700&family=Source+Code+Pro:wght@500&display=swap"
+      rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+   {% include '../layouts/header.twig' %}
+
+   <main>
+      {% block content %}{% endblock %}
+   </main>
+
+   {% include '../layouts/footer.twig' %}
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/variables";
+
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/typography";
+@import "base/body";
+@import "base/utils";
+
+@import "components/button";
+@import "components/burger";
+
+@import "form/input";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/main";
+
+@import "pages/portfolio";
+@import "pages/service";
+@import "pages/contact";
+
+@import "section/welcome";
+@import "section/slider";
+@import "section/about";
+@import "section/background";
+@import "section/work";
+@import "section/line";
+@import "section/request";
